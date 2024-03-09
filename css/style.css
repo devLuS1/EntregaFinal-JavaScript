@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/********************** HEADER **********************/
+
+header {
+    background-color: #002147;
+    width: 100%;
+    padding: 0.6% 3%;
+}
+
+header .nav-item a {
+    color: white;
+}
+
+.logo {
+    width: 7%;
+}
+
+.logo img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: #cdcbcb;
+    font-weight: bold;
+}
+
+header li {
+    padding-left: 25px;
+    font-size: 1.2rem;
+}
+
+.navMenuContact {
+    padding-right: 40px;
+}
+
+.cartButton {
+    text-decoration: none;
+    color: white;
+}
+
+.cartIcon {
+    width: 40%;
+}
+
+/********************** FOOTER **********************/
+
+footer {
+    background-color: #002147;
+    padding: 2% 4%;
+    color: white;
+}
+
+.footerContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: 15%;
+    margin-top: 2%;
+}
+
+.connectContainer {
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35% 25%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.connectContainer h3 {
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 1.5rem;
+}
+
+.socials {
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.facebookIcon {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 35%;
+}
+
+.instagramIcon {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 35%;
+}
+
+.pinteresIcon {
+    grid-area: 1 / 3 / 2 / 4;
+    width: 35%;
+}
+
+.youtubeIcon {
+    grid-area: 1 / 4 / 2 / 5;
+    width: 35%;
+}
+
+.customerCareContainer {
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35% 25%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.customerCareContainer h3 {
+    grid-area: 1 / 1 / 2 / 2;
+    padding-left: 9%;
+    font-size: 1.5rem;
+}
+
+.customerCareContainer ul {
+    grid-area: 2 / 1 / 3 / 2;
+    list-style: none;
+    display: inline-block;
+}
+
+.customerCareContainer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.linksWebsiteContainer {
+    grid-area: 1 / 3 / 2 / 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35% 25%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.linksWebsiteContainer h3 {
+    grid-area: 1 / 1 / 2 / 2;
+    padding-left: 9%;
+    font-size: 1.5rem;
+}
+
+.linksWebsiteContainer ul {
+    grid-area: 2 / 1 / 3 / 2;
+    list-style: none;
+    display: inline-block;
+}
+
+.linksWebsiteContainer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/********************** INDEX **********************/
+
+.sectionHeroIndex {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.imageHeroIndex {
+    width: 100%;
+}
+
+.textHeroIndex {
+    position: absolute;
+    left: 11%;
+    top: 32%;
+    color: white;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.8);
+}
+
+.textHeroIndex h1 {
+    font-size: 5rem;
+
+}
+
+.textHeroIndex p {
+    font-size: 1.125rem;
+}
+
+.textHeroIndex button {
+    padding: 0.50%;
+    width: 25%;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #78D6C6;
+    border: none;
+    font-weight: bold;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.8);
+}
+
+.sectionIndex2 h2 {
+    display: flex;
+    justify-content: column;
+    align-items: top;
+    color: #002147;
+    padding: 6% 4% 0% 4%;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.trendingContainers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 2% 4% 5% 4%;
+}
+
+.trending1,
+.trending2,
+.trending3,
+.trending4 {
+    width: 100%;
+    height: 88%;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.05);
+}
+
+.trendingContainer1 p,
+.trendingContainer2 p,
+.trendingContainer3 p,
+.trendingContainer4 p {
+    margin-top: 2%;
+}
+
+.sectionIndex3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 2% 4% 5% 4%;
+}
+
+.index3Img1,
+.index3Img2,
+.index4Img {
+    width: 100%;
+}
+
+/********************** CLOTHING **********************/
+
+.mainClothing h1 {
+    color: #002147;
+    padding: 5% 4% 0% 4%;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.productsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 2% 4% 5% 4%;
+}
+
+.productImage {
+    width: 100%;
+    height: 70%;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.05);
+}
+
+.productDetail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    color: black;
+}
+
+.productTitle {
+    margin-top: 5%;
+    font-size: 1.4rem;
+}
+
+/********************** PRODUCT **********************/
+
+.productDetailedInfo {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 5% 15% 4% 15%;
+    gap: 5rem;
+}
+
+.productImageDetailed {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+}
+
+.productDetailedInfoText {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.productDetailedPrice {
+    font-weight: bolder;
+}
+
+.productDetailedDescriptionTitle {
+    border-bottom: 1px solid black;
+    width: 14%;
+}
+
+.productAddCart {
+    padding: 1%;
+    width: 40%;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #78D6C6;
+    border: none;
+    font-weight: bold;
+}
+
+/********************** CONTACT **********************/
+
+.sectionContact1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.imageSectionContact1 {
+    width: 100%;
+}
+
+.textSectionContact1 {
+    position: absolute;
+    left: 10%;
+    top: 32%;
+    color: white;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.8);
+}
+
+.textSectionContact1 h1 {
+    font-size: 5rem;
+
+}
+
+.textSectionContact1 p {
+    font-size: 1.125rem;
+}
+
+.sectionContact2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 6% 10% 0 10%;
+    align-items: top;
+    gap: 5%;
+}
+
+.formContainer {
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+label {
+    display: block;
+    margin-bottom: 1%;
+    margin-top: 2.5%;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 0.625rem;
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0.625rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.625rem;
+}
+
+input[type="email"] {
+    display: block;
+    width: 100%;
+    padding: 0.625rem;
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
+}
+
+.btnForm {
+    padding: 1.5% 0%;
+    width: 45%;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 4%;
+}
+
+.sectionInfoContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 20%;
+    margin-left: 40%;
+}
+
+.address {
+    margin-left: 45px;
+}
+
+.sectionInfoContact p i {
+    margin-right: 25px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.sectionInfoContact1 h3 {
+    margin-bottom: 5%;
+}
+
+.sectionInfoContact2 h3 {
+    margin-bottom: 5%;
+    margin-top: 20%;
+}
+
+/********************** CART **********************/
+
+.mainCart h1 {
+    color: #002147;
+    padding: 5% 4% 0% 7.5%;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.emptyCart {
+    padding: 0% 4% 0% 4%;
+    font-size: 1rem;
+}
+.emptyCartButton {
+    margin-left: 4%;
+    border: none;
+    background: none;
+    border-bottom: 1px solid black;
+}
+.cartContainer {
+    padding: 0% 4% 2% 4%;
+}
+
+.productsColumn {
+    width: 68%;
+    float: left;
+}
+
+.checkoutColumn {
+    width: 32%;
+    float: right;
+}
+
+.productCart {
+    display: grid;
+    grid-template-columns: 12% repeat(3, 28%) 4%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 3%;
+    margin-right: 5%;
+}
+.productCart img {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+}
+.productNameCart {
+    grid-area: 1 / 2 / 2 / 3;
+}
+.productQuantityCart {
+    grid-area: 1 / 3 / 2 / 4;
+}
+.productPriceCart {
+    grid-area: 1 / 4 / 2 / 5;
+}
+.deleteProductCart {
+    grid-area: 1 / 5 / 2 / 6;
+    border: none;
+    background: none;
+    width: 70%;
+}
+.productNameCart {
+    margin-left: 5%;
+}
+.productNameCart h3 {
+    font-size: 1.2rem;
+}
+.productPriceCart p {
+    font-weight: bolder;
+}
+.orderSummaryCart {
+    background-color: lightgray;
+    height: 75%;
+    padding: 4% 4% 4% 4%;
+    margin: 2% 22% 2% 22%;
+}
+.textOrderSummary {
+    font-weight: bolder;
+    font-size: 1.3rem;
+    border-bottom: 1px solid black;
+}
+.subtotalCart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.shippingCart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.totalCart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    font-weight: bolder;
+}
+.checkoutCart {
+    padding: 0.50%;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #78D6C6;
+    border: none;
+    font-weight: bold;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+}

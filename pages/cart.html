@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKY Shop</title>
+    <!-- CSS BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="logo" href="../index.html"><img src="../assets/img/logo.png" alt="SKY Shop Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+                    aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item navCategories">
+                            <a class="nav-link" href="clothing.html" onclick="showProductByCategory('All')">CLOTHING</a>
+                        </li>
+                        <li class="nav-item navCategories">
+                            <a class="nav-link" href="clothing.html" onclick="showProductByCategory('Tops')">TOPS</a>
+                        </li>
+                        <li class="nav-item navCategories">
+                            <a class="nav-link" href="clothing.html" onclick="showProductByCategory('Bottoms')">BOTTOMS</a>
+                        </li>
+                        <li class="nav-item navCategories">
+                            <a class="nav-link" href="clothing.html" onclick="showProductByCategory('Dresses')">DRESSES</a>
+                        </li>
+                        <li class="nav-item  navCategories navMenuContact">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="cartButton" href="cart.html">
+                        <img class="cartIcon" src="../assets/img/bag.png" alt="Cart icon">
+                        <span id="cartNumber" class="cartNumber">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mainCart">
+        <h1>SHOPPING BAG</h1>
+        <div id="cartContainer" class="cartContainer">
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="connectContainer">
+                <h3>CONNECT</h3>
+                <div class="socials">
+                    <a href="https://www.facebook.com/login/web/" target="_blank">
+                        <img class="facebookIcon" src="../assets/img/icon_facebook.png" alt="Facebook icon">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="instagramIcon" src="../assets/img/icon_instagram.png" alt="Instagram icon">
+                    </a>
+                    <a href="https://www.pinterest.com/" target="_blank">
+                        <img class="pinteresIcon" src="../assets/img/icon_pinterest.png" alt="Pinterest icon">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img class="youtubeIcon" src="../assets/img/icon_youtube.png" alt="Youtube icon">
+                    </a>
+                </div>
+            </div>
+            <div class="customerCareContainer">
+                <h3>CUSTOMER CARE</h3>
+                <ul>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                </ul>
+            </div>
+            <div class="linksWebsiteContainer">
+                <h3>SKY SHOP</h3>
+                <ul>
+                    <li><a href="clothing.html">Clothing</a></li>
+                    <li><a href="tops.html">Tops</a></li>
+                    <li><a href="bottoms.html">Bottoms</a></li>
+                    <li><a href="dresses.html">Dresses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright &copy; <time datetime="2023"></time> 2023 SKY Shop. All Rights Reserved.
+        </div>
+    </footer>
+    <!-- BS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
